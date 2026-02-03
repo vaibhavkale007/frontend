@@ -49,17 +49,12 @@ const Signup = () => {
 
     try {
       dispatch(setLoading(true));
-// https://backend-seven-weld-75.vercel.app/
-       const res = await api.post("https://backend-seven-weld-75.vercel.app/api/v1/user/register", formData, {
+
+      const res = await api.post("/api/v1/user/register", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
-      // const res = await api.post("/api/v1/user/register", formData, {
-      //   headers: {
-      //     "Content-Type": "multipart/form-data",
-      //   },
-      // });
 
       if (res.data.success) {
         toast.success(res.data.message);
