@@ -44,7 +44,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li><Link to="/">Name changed</Link></li>
+                                    <li><Link to="/">vaibhav</Link></li>
                                     <li><Link to="/jobs">Jobs</Link></li>
                                     <li><Link to="/browse">Browse</Link></li>
                                 </>
